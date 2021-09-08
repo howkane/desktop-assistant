@@ -133,7 +133,7 @@ def computer():
             webbrowser.get().open(yurl)
             break
 
-    if ".com" in iput:
+    if ".com" or ".org" or ".net" or ".io" or ".info" in iput:
         while True:
             site = "https://www." + iput
             computer.say("Opening" + iput)
@@ -149,7 +149,7 @@ def computer():
             locat = input("> ")
             lurl = 'https://google.com/maps/place/' + locat + '/&amp;'
             webbrowser.get().open(lurl)
-            endmap = "This is" + locat + "sir"
+            endmap = "This is" + locat + " sir"
             computer.say(endmap)
             computer.runAndWait()
             break
@@ -157,8 +157,6 @@ def computer():
     if "youtube" not in iput and ".com" not in iput and iput!="mkdir" and iput!="directory" and iput!="locate" and iput!="google" and iput!="time" and iput!="joke" and iput!="file" and iput!='exit all':
             wiki_search = wikipedia.search(iput, results = 5)
             print(wiki_search)
-            computer.say(wiki_search)
-            computer.runAndWait()
             print("> Write in single quotes")
             while True:
                 wiki_iput = input("> ")
