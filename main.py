@@ -157,8 +157,9 @@ def computer():
     if "youtube" not in iput and ".com" not in iput and iput!="mkdir" and iput!="directory" and iput!="locate" and iput!="google" and iput!="time" and iput!="joke" and iput!="file" and iput!='exit all':
             wiki_search = wikipedia.search(iput, results = 5)
             print(wiki_search)
-            computer.say(wiki_search + " (write in single quotes)")
+            computer.say(wiki_search)
             computer.runAndWait()
+            print("> Write in single quotes")
             while True:
                 wiki_iput = input("> ")
                 wiki_result = wikipedia.summary(wiki_iput, sentences = 3)
