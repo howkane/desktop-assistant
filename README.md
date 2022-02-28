@@ -1,1 +1,1 @@
-# desktop-assistant
+# desktopassist
